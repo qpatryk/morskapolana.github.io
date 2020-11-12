@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@400;700&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Lato, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* main image*/
+/* animation value main image*/
+.container-img {
+  position: relative no repeat no repeat;
+  text-align: center;
+  color: white;
+  
+  width:100%;
+  height: auto;
+
+  animation-name: container-zoom;
+  animation-duration: 5s;
+  animation-fill-mode:  forwards;
+}
+
+#container-outer{
+    
+    width:100%;
+    overflow: hidden;
+}
+
+/* fonts */
+
+#container-outer {
+    font-family: Lato, sans-serif;
+}
+
+/* zoom main image*/
+
+@keyframes container-zoom{
+    from{
+        transform: scale(1)
+    }
+    to{
+        transform: scale(1.1)
+    }
+}
+
+
+
+/* Centered text main image*/
+
+.centered {
+  font-size: calc(1rem + 2vw);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  max-width: 100%;
+}
+
+
+  
+  
+
+#wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrapper {
+    margin-bottom: 40px;
+}
+
+.wrapper--no-margin {
+    margin-bottom: 0;
+}
+
+.wrapper--green {
+    background-color: #6cb219;
+}
+
+.info-sections__info {
+    height: 900px;
+    position: relative;
+    background-size: 100%;
+}
+
+.info-sections__info__inner-content {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: rgba(241, 109, 107, .75);
+    color: #fff;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .info-sections__info {
+        background-size: 300%;
+    }
+}
+
+#about{
+    background-image: url(../image/5.jpg);
+    background-position: center;
+    background-size: 100%100%;
+}
+
+#for-who{
+    background-image: url(../image/beach.jpg);
+    background-position: center;
+    background-size: 100%100%;
+}
+
+#what-can{
+    background-image: url(../image/IMG_6164.jpg);
+    background-position: center;
+    background-size: 100%100%;
+}
+
+#location{
+    background-image: url(../image/lokalizacja_respov2.jpg);
+    background-position: center;
+    background-size: 100%100%;
+}
+
+#gallery{
+    background-color: #414141;
+    background-position: center;
+    color: #ebebeb
+}
+#pricing{
+    background-color:  rgba(241, 109, 107, .75);
+    background-position: center;
+}
+
+
+
+
+
+body{
+    font-family: lato;
+}
+
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+/* navbar over main image position and...*/
+
+#navbarTogglerDemo02 li{
+    margin-right: 30px;  
+    margin-top: 3%; 
+    
+}
+
+.navbar{
+    float: right;
+}
+
+.container-nav{
+    float: left;
+    
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.nav-link{
+    border-bottom: 4px solid rgba(241, 109, 107, .75);
+}
+
+
+/* The company logo */
+
+.brand-name{
+    margin-left: 1%;
+}
+
+.logo-footer{
+    max-width: 80%;
+   
+}
+
+
+/* Thumbnail 3 houses under the main picture */
+
+.card-deck{
+    padding: 5% 5% 5% 5%;
+}
+
+
+.justify-content-center{
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+/* gallery */
+
+.picture{
+    width: 33%;
+}
+
+/*pricing*/
+
+* {
+  box-sizing: border-box;
+  
+}
+
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #414141;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+/* ---------------------Contact form ----------------*/
+#contact{
+    display: table;
+    width: 100%;
+    
+}
+.my-contact-center{
+  /*padding: 2% 2% 2% 20%;*/
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.contact-container {
+    padding: 30px;
+    background-color: #414141;
+}
+
+
+.fa-map-maker,
+.span-footer,
+.logo-footer{
+   padding-top: 2%;
+}
+
+/* over footer banner*/
+
+.w3-bar .w3-bar-item{
+text-align: center;
+float: none !important;
+}
+
+
+/* -----------------------footer-------------------*/
+
+.footer {
+  background-color: #414141;
+  width: 100%;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* footer left*/
+
+
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+
+/* footer right*/
+
+
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #0099ff;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #0099ff;
+}
+
+.footer .name {
+  color: #0099ff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+
+.contact-text-big {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+}
